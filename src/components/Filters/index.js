@@ -1,7 +1,7 @@
 import { Col, Row, Input, Typography, Radio, Select, Tag } from "antd";
 import { useState } from "react";
 import { searchTodoAction } from "../../redux/actions";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 const { Search } = Input;
 
 export default function Filters() {

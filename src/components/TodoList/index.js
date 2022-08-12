@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addTodoAction } from "../../redux/actions";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
-import { todoListSelector, searchTextSelector } from "../../redux/selectors";
+import { todosRemaining } from "../../redux/selectors";
 
 export default function TodoList() {
   const [todoName, setTodoName] = useState("");
@@ -15,9 +15,9 @@ export default function TodoList() {
   const todoNameIsValid = !valueIsValid && enteredValueTouched;
 
   const dispatch = useDispatch();
-  const todoList = useSelector(todoListSelector);
-  const search = useSelector(searchTextSelector);
-  console.log(search);
+  const todoList = useSelector(todosRemaining);
+  // const search = useSelector(searchTextSelector);
+
   const inputBlurHandler = () => {
     setEnteredValueTouched(true);
   };
