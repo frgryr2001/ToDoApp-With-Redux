@@ -16,7 +16,6 @@ export default function TodoList() {
 
   const dispatch = useDispatch();
   const todoList = useSelector(todosRemaining);
-  // const search = useSelector(searchTextSelector);
 
   const inputBlurHandler = () => {
     setEnteredValueTouched(true);

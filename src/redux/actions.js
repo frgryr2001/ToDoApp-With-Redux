@@ -5,3 +5,6 @@ export const addTodoAction = (data) => {
 export const searchTodoAction = (data) => {
   return { type: "todoList/search", payload: data };
 };
+export const statusFilterChange = (status) => {
+  return { type: "todoList/statusFilterChange", payload: status };
+};
