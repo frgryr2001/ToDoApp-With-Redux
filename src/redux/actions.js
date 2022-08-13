@@ -8,3 +8,9 @@ export const searchTodoAction = (data) => {
 export const statusFilterChange = (status) => {
   return { type: "todoList/statusFilterChange", payload: status };
 };
+export const priorityFilterChange = (priority) => {
+  return { type: "todoList/priorityFilterChange", payload: priority };
+};
+export const toggleTodoStatus = (todoId) => {
+  return { type: "todoList/toggleTodoStatus", payload: todoId };
+};

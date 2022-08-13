@@ -16,6 +16,12 @@ const FilterReducer = (state = initState, action) => {
         ...state,
         status: action.payload,
       };
+    case "todoList/priorityFilterChange":
+      return {
+        ...state,
+        priority: action.payload,
+      };
+
     default:
       return state;
   }
